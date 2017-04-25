@@ -1,0 +1,17 @@
+#Sage MathCell Code
+A = matrix([[-3/200,1/80,527/20],[3/1000,-2081/80,0],[3/250, 26, -29/80]])
+show(A)
+show(A.eigenvectors_right())
+#?s refer to imaginary numbers, are these ok?
+B = matrix([[.99126],[0], [0]])
+show(B)
+invA = A.inverse
+show(invA()*B)
+#take inverse values and divide by total to scale
+#end part C
+
+#part D
+C = matrix([[0.0015804],[0], [0]]) #check nonzero matrix val
+show(invA()*C)
+
+#all coming out the same :/
