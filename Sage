@@ -14,3 +14,12 @@ show(B)
 #part D
 #C = matrix([[0.0015804],[0], [0]]) #check nonzero matrix val
 #show(invA()*C)
+
+#finding a_naught
+z = matrix([[.013244, 1/80, 29/80],[.003, 26.014, 0], [.015, 26, .3607]])
+show(z)
+zInv = z.inverse
+a_o = matrix([[.001741],[0],[0]])
+show(a_o)
+y = (zInv()*a_o)
+show(y)
