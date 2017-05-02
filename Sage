@@ -31,3 +31,5 @@ var('N')
 q = matrix([[2.474],[-.00017],[-.049]])
 show(q)
 qxInv= xInv()*q
+
+#Part C FINISHED
