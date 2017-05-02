@@ -6,14 +6,6 @@ show(A.eigenvalues())
 show(A.eigenvectors_right())
 B = matrix([[.00174],[0], [0]])
 show(B)
-#invA = A.inverse
-#show(invA()*B)
-#take inverse values and divide by total to scale
-#end part C
-
-#part D
-#C = matrix([[0.0015804],[0], [0]]) #check nonzero matrix val
-#show(invA()*C)
 
 #finding a_naught
 z = matrix([[.013244, 1/80, 29/80],[.003, 26.014, 0], [.015, 26, .3607]])
@@ -36,6 +28,6 @@ xInv = x.inverse
 show(xInv())
 
 var('N')
-q = matrix([[N+1.474],[-.00017],[-.049]])
+q = matrix([[2.474],[-.00017],[-.049]])
 show(q)
-qxInv= xInv*q
+qxInv= xInv()*q
