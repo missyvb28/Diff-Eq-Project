@@ -23,3 +23,19 @@ a_o = matrix([[-.001741],[0],[0]])
 show(a_o)
 y = (zInv()*a_o)
 show(y)
+
+A = matrix([[-3/200,1/80,29/80],[3/1000,-2081/80,0],[3/250, 26, -29/80]])
+show(A)
+show(A.eigenvalues())
+#?s refer to imaginary numbers, are these ok?
+show(A.eigenvectors_right())
+
+#inverse of eigenvectors
+x = matrix([[1,1,1],[6/52025,73.243,.0001170],[62424/1508725,-74.243,-1.000117]])
+xInv = x.inverse
+show(xInv())
+
+var('N')
+q = matrix([[N+1.474],[-.00017],[-.049]])
+show(q)
+qxInv= xInv*q
