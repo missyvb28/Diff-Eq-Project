@@ -7,12 +7,12 @@ B = matrix([[.00174],[0], [0]]) #b(a) for age 5
 show(B)
 
 #finding a_naught
-z = matrix([[.013244, 1/80, 29/80],[.003, 26.014, 0], [.015, 26, .3607]])
+z = matrix([[.013244, -1/80, -29/80],[-.003, 26.0107, 0], [-3/250, 26, .3607]])
 show(z)
 zInv = z.inverse
 a_o = matrix([[-.001741],[0],[0]])
 show(a_o)
-y = (zInv()*a_o)
+y = (zInv()*a_o) #actual value of Ao
 show(y)
 
 A = matrix([[-3/200,1/80,29/80],[3/1000,-2081/80,0],[3/250, 26, -29/80]])
@@ -26,9 +26,10 @@ x = matrix([[1,1,1],[6/52025,73.243,.0001170],[62424/1508725,-74.243,-1.000117]]
 xInv = x.inverse
 show(xInv())
 
-q = matrix([[2.474],[-.00017],[-.049]])
+q = matrix([[1.04149],[.00004785],[.01035]])
 show(q)
 qxInv= xInv()*q
+show(qxInv)
 
 #Part C FINISHED
 
