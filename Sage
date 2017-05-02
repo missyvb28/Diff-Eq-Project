@@ -33,3 +33,4 @@ show(q)
 qxInv= xInv()*q
 
 #Part C FINISHED
+
